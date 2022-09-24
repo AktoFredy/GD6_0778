@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             .setOnlyAlertOnce(true)
             .setContentIntent(pendingIntent)
             .addAction(R.mipmap.ic_launcher, "Toast", actionIntent)
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
 
         with(NotificationManagerCompat.from(this)){
             notify(notificationId1, builder.build())
